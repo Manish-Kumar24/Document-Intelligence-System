@@ -1,5 +1,5 @@
 # Document Intelligence System
-![Main Interface](D:\Projects\DeepSeek RAG\image\Capture.PNG)
+![Main Interface](https://github.com/Manish-Kumar24/Document-Intelligence-System/blob/main/image/Capture.PNG)
 A powerful document analysis system powered by DeepSeek-R1 LLM and RAG (Retrieval Augmented Generation) technology. This application allows users to upload PDF documents and ask questions about their content, receiving accurate, context-aware responses.
 
 ## 🎯 Features
@@ -51,23 +51,21 @@ pip install -r requirements.txt
 
 5. Run the application
 ```bash
-streamlit run src/app.py
+streamlit run app.py
 ```
 
 ## 📁 Project Structure
 ```
-document_rag/
-├── src/
+Document-Intelligence-System/
+|── app.py
+|── core/
+│   |── __init__.py
+│   |── document_processor.py
+│   |── embeddings.py
+│   |── qa_engine.py
+|── utils/
 │   ├── __init__.py
-│   ├── app.py
-│   ├── core/
-│   │   ├── __init__.py
-│   │   ├── document_processor.py
-│   │   ├── embeddings.py
-│   │   └── qa_engine.py
-│   └── utils/
-│       ├── __init__.py
-│       └── config_manager.py
+│   └── config_manager.py
 ├── config/
 │   └── settings.json
 ├── requirements.txt
